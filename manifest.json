@@ -1,0 +1,82 @@
+{
+  "id": "/",
+  "name": "MYSMART SURF — Kawal Masa & Lindungi",
+  "short_name": "MYSMART SURF",
+  "description": "Kawal Masa. Lindungi Penggunaan. Bina Tabiat Digital Yang Sihat. Aplikasi Kawalan Ibu Bapa (Parental Control) PWA & APK.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay"],
+  "background_color": "#090A0C",
+  "theme_color": "#2563EB",
+  "orientation": "portrait-primary",
+  "dir": "ltr",
+  "lang": "ms",
+  "prefer_related_applications": false,
+  "categories": [
+    "productivity",
+    "utilities",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Lock Device Now",
+      "short_name": "Lock Device",
+      "description": "Kunci peranti serta merta",
+      "url": "/?action=lock",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Screen Time Control",
+      "short_name": "Screen Time",
+      "description": "Tetapkan had masa skrin harian",
+      "url": "/?tab=screentime",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Block Internet",
+      "short_name": "Block Internet",
+      "description": "Sekat sambungan internet",
+      "url": "/?tab=internet",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

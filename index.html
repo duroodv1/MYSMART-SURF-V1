@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>MYSMART SURF — Kawal Masa. Lindungi Penggunaan.</title>
+    <meta name="description" content="Kawal Masa. Lindungi Penggunaan. Bina Tabiat Digital Yang Sihat. Aplikasi Parental Control Android PWA & APK." />
+    
+    <!-- PWA & Android APK Wrapper Settings -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#090A0C" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="MYSMART SURF" />
+    <meta name="application-name" content="MYSMART SURF" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- High-res PNG & SVG Icons for PWA / APK Launcher -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./pwa-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./pwa-512x512.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./icon-192.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MYSMART SURF — Android Parental Control" />
+    <meta property="og:description" content="Kawal Masa. Lindungi Penggunaan. Bina Tabiat Digital Yang Sihat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./icon-512.svg" />
+    
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-ClA4Alxa.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DxSbyxNb.css">
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased select-none overflow-x-hidden">
+    <div id="root"></div>
+    <script>
+      // Register Service Worker for PWA Offline Support
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then((reg) => console.log('MYSMART SURF SW Registered:', reg.scope))
+            .catch((err) => console.warn('SW registration skipped:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

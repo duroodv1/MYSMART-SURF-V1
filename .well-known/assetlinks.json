@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mysmartsurf.parental",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:01:F8:85:7E:0E:12:F5:CD:E8:6E:9B:F3:D5:8C:7A:B4:73:95:67:E6:3C:A9:97:54:19:95:25:22:98"
+      ]
+    }
+  }
+]

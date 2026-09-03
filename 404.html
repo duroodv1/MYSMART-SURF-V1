@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MYSMART SURF — Memuatkan Semula...</title>
+    <script>
+      // Single Page App fallback for GitHub Pages
+      // Redirects 404 subpaths back to the app's base route
+      const pathname = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      
+      // Determine repository base directory
+      const pathSegments = pathname.split('/').filter(Boolean);
+      // If deployed on https://username.github.io/repo-name/
+      const repoBase = pathSegments.length > 0 ? '/' + pathSegments[0] + '/' : '/';
+      
+      window.location.replace(repoBase + (search || '') + (hash || ''));
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #090A0C;
+        color: #94A3B8;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      .spinner {
+        width: 32px;
+        height: 32px;
+        border: 3px solid rgba(56, 189, 248, 0.2);
+        border-top-color: #38BDF8;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin: 0 auto 16px;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="spinner"></div>
+      <p>Menghubungkan ke MYSMART SURF...</p>
+    </div>
+  </body>
+</html>
