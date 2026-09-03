@@ -1,0 +1,6 @@
+{
+  "name": "MYSMART SURF",
+  "description": "Kawal Masa. Lindungi Penggunaan. Bina Tabiat Digital Yang Sihat. Aplikasi Parental Control Android PWA & APK.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
